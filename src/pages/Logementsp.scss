@@ -1,16 +1,40 @@
-.imagecover {
+
+.imagecover--container{
     height: 415px;
     display: flex;
-    object-fit: cover;
-    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 50px;
     margin-bottom: 30px;
+
+}
+
+.imagecover--container__arrowcount{
+    height: 415px;
+    width: 100%;
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 180px;
+    gap : 100px;
+}
+.imagecover {
+    height: 415px;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    overflow: hidden;    
     justify-content: center;
     align-items: center;
     border-radius: 25px;
-    
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 img{
@@ -21,32 +45,33 @@ img{
 .imagecover img{
     min-height: 415px;
 }
-.imagecover--arrow{
-    position: absolute;
-    z-index: 1;
-    display: flex;
-    justify-content: space-between;
-    width:70% ;
-    
-}
+
+
+
 
 .imagecover--count{
-    position: absolute;
-    z-index: 1;
+    
     font-family: "Montserrat", serif;
     font-size: 18px;
     font-weight: 500;
-    bottom: 180px;
+    
     color:#FFFFFF;
 }
-
+.imagecover--container__arrow{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
 .imagecover--arrow__left{
-    left : 20px;
+    
+    padding-left: 50px;
     fill: white;
 }
 
 .imagecover--arrow__right{
-    right : 20px;
+    
+    padding-right: 50px;
     fill: white;
 }
 
@@ -137,17 +162,24 @@ img{
 
 
 @media (max-width: 767.98px) {
+    .imagecover--container{
+        
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    
+    }
 
     .imagecover {
         margin-left: 20px;
         margin-right: 20px;
     }
-
-    .imagecover--count{
+    .imagecover--container__arrowcount{
         
-        bottom: 220px;
-        
+        margin-left: 20px;
+        margin-right: 20px;
     }
+    
     .title {  
     flex-direction: column;
     margin-left: 20px;
