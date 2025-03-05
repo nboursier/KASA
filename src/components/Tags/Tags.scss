@@ -1,0 +1,20 @@
+.tags__container{
+    display: flex;
+flex-direction: row;
+gap: 20px;
+}
+.tags__txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Montserrat", serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FFFFFF;
+    background-color: #FF6060;
+    min-width: 115px;
+    border-radius: 10px;
+    text-align: center;
+    height: 25px;
+    padding-inline: 10px;
+}
