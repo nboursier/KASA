@@ -1,15 +1,17 @@
 import Navbar from '../components/Navbar/Navbar'
-import Banner from '../components/Banner/Banner'
+
 import { NavLink } from "react-router"
 import Footer from '../components/Footer/Footer'
-import './P404.scss'
+import './P404.css'
+
+
 function P404() {
 
   return (
-    <div>
-      <div>
+    
+      <div className="container">
         <Navbar />
-        <Banner />
+        
         <div className="P404--container">
 
         <p className="P404--txt1">404</p>
@@ -21,7 +23,7 @@ function P404() {
         
         <Footer />
       </div>
-    </div>
+    
   )
 }
 

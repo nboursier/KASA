@@ -1,5 +1,5 @@
 import React from 'react';
-import './Rating.scss'
+import './Rating.css'
 
 const staractive = (
   <div>         

@@ -1,5 +1,5 @@
 import React from 'react';
-import './Tags.scss'
+import './Tags.css'
 function Tags(props) {
 
     const txtcontent = props.content

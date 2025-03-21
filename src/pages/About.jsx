@@ -2,14 +2,17 @@ import Navbar from '../components/Navbar/Navbar'
 import Banner from '../components/Banner/Banner'
 import Dropdown from "../components/dropdown/Dropdown"
 import Footer from '../components/Footer/Footer'
-import './about.scss'
+import './about.css'
+import imgbanner from "../assets/banner2.jpg"
+
 function About() {
 
   return (
-    <div>
+    
       <div>
         <Navbar />
-        <Banner />
+        <Banner value={imgbanner}/>
+        
         <div className="About--container">
 
           <div className="About--Dropdown">
@@ -29,7 +32,7 @@ function About() {
         </div>
         <Footer />
       </div>
-    </div>
+    
   )
 }
 

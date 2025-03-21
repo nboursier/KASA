@@ -4,7 +4,20 @@
   padding: 0px;
   width: 100%;
   
+  min-height: auto;
+  display: flex;
+flex-direction: column;
+
 }
 
 
 
+ body{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  
+
+    
+    
+} 
