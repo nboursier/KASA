@@ -7,7 +7,7 @@ function Tags(props) {
 const a = txtcontent.length
     for ( let i=0; i<a; i++ ) 
         {
-        const tagsi=[   <div className="tags__txt">
+        const tagsi=[   <div key={i} className="tags__txt">
                         {txtcontent[i]}
                         </div> 
                     ]

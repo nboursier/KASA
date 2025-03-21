@@ -37,7 +37,7 @@ function Logementsp() {
     }
 
     const carroussel = [
-        <div className="imagecover--container__arrowcount">
+        <div key={id} className="imagecover--container__arrowcount">
             <div className="imagecover--container__arrow">
                 <div onClick={countdown}>
                     <svg className="imagecover--arrow__left" width="48" height="80" viewBox="0 0 48 80" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -71,8 +71,9 @@ function Logementsp() {
     }
     return (
         <div  >
-            <div  >
+            
                 <Navbar />
+                <div  >
                 <div  className="imagecover--container">
 
                     {carrousselaffiche}
@@ -81,47 +82,48 @@ function Logementsp() {
 
 
 
-                        <img key={logementaffiché.pictures[count]}  src={logementaffiché.pictures[count]} alt="cover" />
+                        <img   src={logementaffiché.pictures[count]} alt="cover" />
 
                     </div>
                 </div>
                 <div className="title">
                     <div className="title--txt">
-                        <h1 key={logementaffiché.title} className="title--txt1">{logementaffiché.title}</h1>
-                        <h2 key={logementaffiché.location} className="title--txt2">{logementaffiché.location}</h2>
+                        <h1  className="title--txt1">{logementaffiché.title}</h1>
+                        <h2  className="title--txt2">{logementaffiché.location}</h2>
                         <div className="title--tags">
-                            <Tags key={logementaffiché.tags} content={logementaffiché.tags} />
+                            <Tags  content={logementaffiché.tags} />
 
                         </div>
 
                     </div>
                     <div className="title--host__container">
                         <div className="title--host__name">
-                            <h4 key={logementaffiché.host.name} className="title--host__txt">{logementaffiché.host.name}</h4>
-                            <div key={logementaffiché.host.picture} className="title--host__circle">
+                            <h4  className="title--host__txt">{logementaffiché.host.name}</h4>
+                            <div  className="title--host__circle">
                                 <img src={logementaffiché.host.picture} alt="cover" />
                             </div>
                         </div>
 
 
                         <div className="title--host__rating">
-                            <Rating key={logementaffiché.rating} value={logementaffiché.rating} />
+                            <Rating  value={logementaffiché.rating} />
                         </div>
                     </div>
                 </div>
 
                 <div className="detail--container">
                     <div className="detail--dropdown">
-                        <Dropdown key={logementaffiché.description} dfontsize="18px" dtitle="Description" doption={logementaffiché.description} />
+                        <Dropdown  dfontsize="18px" dtitle="Description" doption={logementaffiché.description} />
                     </div>
                     <div className="detail--dropdown">
-                        <Dropdown key={logementaffiché.equipments} dfontsize="18px" dtitle="Équipements" doption={logementaffiché.equipments} />
+                        <Dropdown  dfontsize="18px" dtitle="Équipements" doption={logementaffiché.equipments} />
                     </div>
 
 
                 </div>
+                </div>
                 <Footer />
-            </div>
+           
         </div>
 
 
