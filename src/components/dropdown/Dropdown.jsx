@@ -7,7 +7,7 @@ function Dropdown(props) {
 const a = optioncontent.length
  if (Array.isArray(optioncontent)) {for ( let i=0; i<a; i++ ) 
       {
-      const optioni=[   <p className="dropdown--option__txt">
+      const optioni=[   <p key = {i} className="dropdown--option__txt">
                       {optioncontent[i]}
                       </p> 
                   ]
@@ -15,7 +15,7 @@ const a = optioncontent.length
       }}
   else{
 
-    const optioni=[   <p className="dropdown--option__txt">
+    const optioni=[   <p key ={optioncontent} className="dropdown--option__txt">
       {optioncontent}
       </p> 
   ]
